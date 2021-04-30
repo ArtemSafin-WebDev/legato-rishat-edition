@@ -80,6 +80,11 @@
     @include breakpoint(supersmall-mobile) {
         margin-right: 15px;
     }
+
+    &:hover {
+        opacity: 0.8;
+        transition: opacity 0.3s;
+    }
 }
 
 .special__promo-card,

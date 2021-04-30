@@ -40,7 +40,8 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 49rem 49rem;
-        grid-gap: 5%;
+        grid-column-gap: 5%;
+        grid-row-gap: 5%;
         align-items: stretch;
 
         @include breakpoint(laptop) {
@@ -99,6 +100,14 @@
         flex-direction: column;
         justify-content: flex-end;
         transition: 0.5s;
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+        }
 
         @include breakpoint(mobile) {
             padding: 1.2rem;
@@ -212,6 +221,12 @@
         position: absolute;
         justify-content: space-between;
         transition: width 0.3s, all 0.3s;
+
+        &::after {
+            background-color: rgba($color: #fff, $alpha: 0.5);
+            left: 0;
+            top: 0;
+        }
 
         @include breakpoint(laptop) {
             width: calc(200% - 7%);

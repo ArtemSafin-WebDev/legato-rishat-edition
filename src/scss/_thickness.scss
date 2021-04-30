@@ -25,13 +25,21 @@
     @include breakpoint(small-tablet) {
         display: flex;
         flex-direction: column;
-        grid-row-gap: 5rem;
+        grid-row-gap: 0;
     }
 }
 
 .thickness__list-item {
     display: flex;
     flex-direction: column;
+
+    @include breakpoint(small-tablet) {
+        margin-bottom: 5rem;
+
+        &:last-child {
+            margin-bottom: 0rem;
+        }
+    }
 }
 
 .thickness__card {

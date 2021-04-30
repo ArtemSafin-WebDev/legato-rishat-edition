@@ -118,11 +118,11 @@
     }
 
     .no-touch &:hover {
-        .glass__card-link {
-            opacity: 1;
-            visibility: visible;
-            transition: all .2s;
-        }
+        // .glass__card-link {
+        //     opacity: 1;
+        //     visibility: visible;
+        //     transition: all .2s;
+        // }
     }
 }
 
@@ -202,8 +202,8 @@
 }
 
 .glass__card-link {
-    opacity: 0;
-    visibility: hidden;
+    // opacity: 0;
+    // visibility: hidden;
     transition: opacity .2s, visibility 0s linear .2s, background-color .2s, color .2s;
     align-self: flex-start;
 }

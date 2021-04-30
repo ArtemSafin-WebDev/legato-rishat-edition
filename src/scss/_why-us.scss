@@ -169,10 +169,6 @@
 
     @include breakpoint(small-tablet) {
         column-count: 1;
-
-        &>li:nth-child(even) {
-            display: none;
-        }
     }
 }
 
@@ -184,7 +180,10 @@
     color: rgba(#231F20, .7);
     break-inside: avoid;
     margin-bottom: 3rem;
-
+    &.item-close {
+        display: none;
+    }
+    
     &::before {
         content: '';
         flex-shrink: 0;
@@ -197,6 +196,8 @@
         margin-top: 1.3rem;
 
     }
+
+    
 }
 
 .why-us__next {

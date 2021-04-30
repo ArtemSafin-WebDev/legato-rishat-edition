@@ -4,13 +4,14 @@
     color: white;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 
 .how-to-choose__card-table {
     position: absolute;
-    right: 0;
-    bottom: 0;
-    height: 45rem;
+    right: 4rem;
+    bottom: -22rem;
+    height: 66rem;
     width: auto;
     object-fit: contain;
     object-position: right bottom;
@@ -19,21 +20,22 @@
 
     @include breakpoint(small-tablet) {
         right: 50%;
-        bottom: 72%;
-        height: 29rem;
+        bottom: 62%;
+        height: 45rem;
         transform: translateX(50%) translateY(50%);
     }
 
     @include breakpoint(mobile) {
-        bottom: 67%;
-        height: 23rem;
+        bottom: 60%;
+        height: 41rem;
     }
+
     @include breakpoint(supersmall-mobile) {
-        bottom: 65%;
-        height: 23rem;
+        bottom: 60%;
+        height: 32rem;
     }
-    
-    
+
+
 
 }
 

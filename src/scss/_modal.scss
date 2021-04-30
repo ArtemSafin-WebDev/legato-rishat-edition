@@ -105,6 +105,23 @@
         justify-content: center;
         cursor: pointer;
 
+        &:hover {
+            span {
+
+                &:first-child {
+                    transform: translate(50%, 50%) rotate(-45deg) scale(1.5);
+                    transition: 0.3s;
+                }
+
+                &:last-child {
+                    transform: translate(-50%, 50%) rotate(45deg) scale(1.5);
+                    transition: 0.3s;
+                }
+
+            }
+
+        }
+
         &>span {
             background-color: #E4704B;
             height: 1.8px;
@@ -113,10 +130,12 @@
 
             &:first-child {
                 transform: translate(50%, 50%) rotate(-45deg);
+                transition: 0.3s;
             }
 
             &:last-child {
                 transform: translate(-50%, 50%) rotate(45deg);
+                transition: 0.3s;
             }
         }
     }
